@@ -61,3 +61,9 @@ def search(request):
     else:
         
         return render(request,'search.html')
+
+def cart(request):
+    return render(request,'cart.html')
+
+def changepassword(request):
+    return render(request,'changepassword.html')
