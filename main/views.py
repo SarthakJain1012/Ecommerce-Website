@@ -16,7 +16,7 @@ def about(request):
     return render(request,'about.html')
 
 def soap(request):
-    prods=requests.get("http://ecommercesarthak.herokuapp.com//api/products").json()
+    prods=requests.get("http://ecommercesarthak.herokuapp.com/api/products").json()
     soap_prod=[]
     for prod in prods:
         if prod['category']['category_name']=="Soap":
